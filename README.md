@@ -66,7 +66,7 @@ CVC: Any 3 digits
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/sommaire-ai.git
+git clone https://github.com/Jayesh-git10/Sommaire-AI---PDF-SUMMARISER
 cd sommaire-ai
 ```
 
