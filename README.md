@@ -1,13 +1,13 @@
 # 🚀 Sommaire AI — PDF Summarizer
 
-Sommaire AI is an AI-powered web application that allows users to upload PDF documents and instantly generate concise, high-quality summaries. It is designed to save time for students, professionals, and researchers by extracting key insights from lengthy documents.
+Sommaire AI is an AI-powered web application that allows users to upload PDF documents and instantly generate concise, high-quality summaries using advanced language models. It is designed to save time for students, professionals, and researchers by extracting key insights from lengthy documents.
 
 ---
 
 ## ✨ Features
 
 * 📄 Upload and summarize PDF files instantly
-* 🤖 AI-powered text summarization
+* 🤖 AI-powered text summarization (multi-model support)
 * 🔐 Secure authentication using Clerk
 * 💳 Integrated payment system (Stripe test mode)
 * ⚡ Fast and responsive UI built with Next.js
@@ -15,13 +15,28 @@ Sommaire AI is an AI-powered web application that allows users to upload PDF doc
 
 ---
 
-## 🧠 How It Works
+## 🧠 How It Works (Application Flow)
 
-1. User signs in using secure authentication
-2. Uploads a PDF document
-3. AI processes the content
-4. Generates a concise summary
-5. Optional: Unlock premium features via payment
+1. 🔐 **Authentication**
+   Users sign up or log in securely using Clerk
+
+2. 💳 **Subscription / Payment**
+   Users choose between **Basic** and **Pro** plans via Stripe (test mode)
+
+3. 📄 **PDF Upload**
+   Users upload PDF files using UploadThing
+
+4. 🤖 **AI Processing Pipeline**
+
+   * PDF content is extracted and processed using LangChain
+   * The processed text is sent to AI models
+   * Summarization is performed using:
+
+     * OpenAI API
+     * Google Gemini API
+
+5. 📑 **Summarized Output**
+   The system generates a concise and structured summary for the user
 
 ---
 
@@ -31,6 +46,9 @@ Sommaire AI is an AI-powered web application that allows users to upload PDF doc
 * **Backend:** Next.js API Routes
 * **Authentication:** Clerk
 * **Payments:** Stripe (Test Mode)
+* **File Uploads:** UploadThing
+* **AI Processing:** LangChain
+* **AI Models:** OpenAI API, Google Gemini API
 * **Deployment:** Vercel
 
 ---
@@ -45,6 +63,9 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_public_key
 CLERK_SECRET_KEY=your_clerk_secret
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
+OPENAI_API_KEY=your_openai_key
+GEMINI_API_KEY=your_gemini_key
+UPLOADTHING_SECRET=your_uploadthing_secret
 ```
 
 ---
@@ -96,21 +117,13 @@ https://sommaire-ai-pdf-summariser.vercel.app
 
 ## 📌 Future Improvements
 
-* 📊 Better summarization accuracy using advanced models
-* 👥 Collaboration and sharing features
-* 🎵 Integration with other AI tools
+* 📊 Improved summarization using advanced AI models
+* 👥 Collaboration and document sharing
 * 📱 Mobile-first optimization
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
+* 📈 Analytics for document insights
 
 ---
 
 ## 💡 Author
 
 Developed by **Jayesh Sharma**
-
----
