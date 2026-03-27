@@ -5,7 +5,7 @@ import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { ClerkProvider } from "@clerk/nextjs";
-
+import { ORIGIN_URL } from "@/utils/helpers";
 const fontSans = FontSans({
   variable: "--font-sans",
   subsets: ["latin"],
@@ -14,7 +14,18 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Sommaire - AI-Powered PDF Summarization",
-  description: "Sommaire is an app for summarizing PDF documents",
+  description: "Save hours of reading time with Sommaire, the AI-powered PDF summarization tool. Upload your PDFs and get concise summaries in seconds. Perfect for students, professionals, and anyone looking to quickly grasp key information from lengthy documents.",
+  openGraph:{
+    images:[
+      {
+        url: '/opengraph-image.png'
+      },
+    ],
+  },
+  metadataBase : new  URL(ORIGIN_URL),
+  alternates:{
+    canonical:ORIGIN_URL,
+  }
 };
 
 export default function RootLayout({
