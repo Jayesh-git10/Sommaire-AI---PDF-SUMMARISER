@@ -89,7 +89,7 @@ npm run dev
 The app is deployed on Vercel and accessible via:
 
 ```
-https://your-project-name.vercel.app
+https://sommaire-ai-pdf-summariser.vercel.app
 ```
 
 ---
