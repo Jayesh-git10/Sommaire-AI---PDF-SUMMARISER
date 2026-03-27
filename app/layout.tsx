@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  metadataBase: ORIGIN_URL ? new URL(ORIGIN_URL) : undefined,
+  metadataBase: ORIGIN_URL, 
   alternates:{
     canonical:ORIGIN_URL,
   }
