@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Sommaire AI — PDF Summarizer
 
-## Getting Started
+Sommaire AI is an AI-powered web application that allows users to upload PDF documents and instantly generate concise, high-quality summaries. It is designed to save time for students, professionals, and researchers by extracting key insights from lengthy documents.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+* 📄 Upload and summarize PDF files instantly
+* 🤖 AI-powered text summarization
+* 🔐 Secure authentication using Clerk
+* 💳 Integrated payment system (Stripe test mode)
+* ⚡ Fast and responsive UI built with Next.js
+* ☁️ Fully deployed and production-ready
+
+---
+
+## 🧠 How It Works
+
+1. User signs in using secure authentication
+2. Uploads a PDF document
+3. AI processes the content
+4. Generates a concise summary
+5. Optional: Unlock premium features via payment
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js, React, Tailwind CSS
+* **Backend:** Next.js API Routes
+* **Authentication:** Clerk
+* **Payments:** Stripe (Test Mode)
+* **Deployment:** Vercel
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env.local` file and add:
+
+```env
+NEXT_PUBLIC_ORIGIN_URL=http://localhost:3000
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_public_key
+CLERK_SECRET_KEY=your_clerk_secret
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
+```
+
+---
+
+## 💳 Test Payment Details
+
+Use Stripe test card:
+
+```
+Card Number: 4242 4242 4242 4242
+Expiry: Any future date
+CVC: Any 3 digits
+```
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/sommaire-ai.git
+cd sommaire-ai
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌍 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app is deployed on Vercel and accessible via:
 
-## Learn More
+```
+https://your-project-name.vercel.app
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* 📊 Better summarization accuracy using advanced models
+* 👥 Collaboration and sharing features
+* 🎵 Integration with other AI tools
+* 📱 Mobile-first optimization
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💡 Author
+
+Developed by **Jayesh Sharma**
+
+---
